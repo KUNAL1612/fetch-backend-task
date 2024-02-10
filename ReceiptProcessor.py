@@ -1,4 +1,5 @@
 import logging
+import math
 from flask import Flask, jsonify, request
 import uuid
 import sqlite3
@@ -42,7 +43,8 @@ def calculate_points(receipt):
     for item in receipt["items"]:
         description_length = len(item["shortDescription"].strip())
         if description_length % 3 == 0:
-            points += 3
+            price = float(item["price"])
+            points += math.ceil(price * 0.2)
     
     # Rule 6: 6 points if the day in the purchase date is odd
     purchase_day = int(receipt["purchaseDate"].split("-")[-1])
