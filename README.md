@@ -1,6 +1,17 @@
 # fetch-backend-task
 Original question: https://github.com/fetch-rewards/receipt-processor-challenge.
 Brief summary: Used Python's flask libary to define the required endpoints. Used docker to containerize the requirements. Used postman for testing the input/output correctness.
+#### Requirements
+
+To run this application, you need the following dependencies:
+
+- Python 3.x
+- Flask
+- SQLite3 (standard Python library)
+- math (standard Python library)
+- logging (standard Python library)
+- uuid (standard Python library)
+
 
 ### Steps to run:
 
