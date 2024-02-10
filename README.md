@@ -10,6 +10,7 @@ Summary: The code has been written in Python and uses Python's flask library. Th
 1 .Install python from this [link](https://www.python.org/downloads/) based on your machine 
 
 2. Use python's package manager 'pip' to install flask such as `pip3 install flask`
+3. Run the code with `python3 ReceiptProcessor.py`
 
 
 #### Option 2: Use the provided dockerfile
